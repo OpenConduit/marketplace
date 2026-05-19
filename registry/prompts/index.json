@@ -1,0 +1,52 @@
+[
+  {
+    "id": "blog-post-draft",
+    "name": "Blog Post Draft",
+    "type": "prompt-template",
+    "author": "openconduit",
+    "verified": true,
+    "description": "Draft a blog post from a topic and key points.",
+    "content": {
+      "template": "Write a blog post about {{topic}}.\n\nKey points to cover:\n{{key_points}}\n\nTone: {{tone}}.\nTarget length: {{word_count}} words.",
+      "variables": [
+        { "name": "topic", "label": "Topic", "type": "text" },
+        { "name": "key_points", "label": "Key Points", "type": "textarea" },
+        { "name": "tone", "label": "Tone", "type": "select", "options": ["professional", "casual", "technical"] },
+        { "name": "word_count", "label": "Word Count", "type": "number", "default": 800 }
+      ]
+    }
+  },
+  {
+    "id": "code-review-request",
+    "name": "Code Review Request",
+    "type": "prompt-template",
+    "author": "openconduit",
+    "verified": true,
+    "description": "Request a focused code review with context.",
+    "content": {
+      "template": "Please review the following {{language}} code.\n\nContext: {{context}}\n\nFocus areas: {{focus}}\n\n```{{language}}\n{{code}}\n```",
+      "variables": [
+        { "name": "language", "label": "Language", "type": "text" },
+        { "name": "context", "label": "What does this code do?", "type": "textarea" },
+        { "name": "focus", "label": "Focus Areas", "type": "text", "default": "correctness, security, readability" },
+        { "name": "code", "label": "Code", "type": "textarea" }
+      ]
+    }
+  },
+  {
+    "id": "summarise-document",
+    "name": "Summarise Document",
+    "type": "prompt-template",
+    "author": "openconduit",
+    "verified": true,
+    "description": "Summarise a long document into key points.",
+    "content": {
+      "template": "Summarise the following document.\n\nOutput format: {{format}}\nAudience: {{audience}}\n\n---\n{{document}}",
+      "variables": [
+        { "name": "format", "label": "Output Format", "type": "select", "options": ["bullet points", "short paragraph", "executive summary", "TL;DR"] },
+        { "name": "audience", "label": "Audience", "type": "text", "default": "general" },
+        { "name": "document", "label": "Document", "type": "textarea" }
+      ]
+    }
+  }
+]
