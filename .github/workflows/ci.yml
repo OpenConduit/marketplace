@@ -46,7 +46,8 @@ jobs:
           for type in providers mcp personas prompts profiles themes; do
             npx wrangler r2 object put openconduit-registry/v1/${type}/index.json \
               --file dist/v1/${type}/index.json \
-              --content-type application/json
+              --content-type application/json \
+              --remote
           done
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
