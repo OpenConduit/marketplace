@@ -3,6 +3,7 @@ name: Code Review Request
 type: prompt-template
 author: openconduit
 verified: true
+version: "1.0.0"
 description: Request a focused code review with context.
 content:
   template: |

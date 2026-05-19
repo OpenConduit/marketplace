@@ -3,6 +3,7 @@ name: Summarise Document
 type: prompt-template
 author: openconduit
 verified: true
+version: "1.0.0"
 description: Summarise a long document into key points.
 content:
   template: |

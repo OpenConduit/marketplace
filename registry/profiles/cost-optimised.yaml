@@ -3,6 +3,7 @@ name: Cost Optimised
 type: routing-profile
 author: openconduit
 verified: true
+version: "1.0.0"
 description: Routes simple tasks to fast/cheap models, reserves premium models for complex reasoning.
 content:
   tiers:

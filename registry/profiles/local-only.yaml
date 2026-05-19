@@ -3,6 +3,7 @@ name: Local Only
 type: routing-profile
 author: openconduit
 verified: true
+version: "1.0.0"
 description: Routes everything to local models (LM Studio / Ollama). No data leaves your machine.
 content:
   tiers:

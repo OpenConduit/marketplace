@@ -3,6 +3,7 @@ name: Midnight Navy
 type: theme
 author: openconduit
 verified: true
+version: "1.0.0"
 description: Deep navy dark theme with cyan accents.
 content:
   colors:

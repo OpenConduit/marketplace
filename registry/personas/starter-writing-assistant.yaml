@@ -3,6 +3,7 @@ name: Writing Assistant
 type: persona
 author: openconduit
 verified: true
+version: "1.0.0"
 description: Professional editor for clear, concise, neutral-tone writing.
 content:
   name: Writing Assistant

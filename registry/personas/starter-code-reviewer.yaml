@@ -3,6 +3,7 @@ name: Code Reviewer
 type: persona
 author: openconduit
 verified: true
+version: "1.0.0"
 description: Senior engineer reviewing code for correctness, security, performance, and style.
 content:
   name: Code Reviewer

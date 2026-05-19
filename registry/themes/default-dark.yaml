@@ -3,6 +3,7 @@ name: Default Dark
 type: theme
 author: openconduit
 verified: true
+version: "1.0.0"
 description: The default OpenConduit dark theme.
 content:
   colors:

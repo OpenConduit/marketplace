@@ -3,6 +3,7 @@ name: Rubber Duck
 type: persona
 author: openconduit
 verified: true
+version: "1.0.0"
 description: Helps you think through problems by asking questions rather than jumping to answers.
 content:
   name: Rubber Duck

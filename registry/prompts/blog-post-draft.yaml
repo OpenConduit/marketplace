@@ -3,6 +3,7 @@ name: Blog Post Draft
 type: prompt-template
 author: openconduit
 verified: true
+version: "1.0.0"
 description: Draft a blog post from a topic and key points.
 content:
   template: |

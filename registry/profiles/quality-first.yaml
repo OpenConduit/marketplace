@@ -3,6 +3,7 @@ name: Quality First
 type: routing-profile
 author: openconduit
 verified: true
+version: "1.0.0"
 description: Always uses the most capable model available. Best output, higher cost.
 content:
   tiers:

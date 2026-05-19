@@ -3,6 +3,7 @@ name: Research Analyst
 type: persona
 author: openconduit
 verified: true
+version: "1.0.0"
 description: Rigorous research with structured output, citations, and clear sourcing.
 content:
   name: Research Analyst

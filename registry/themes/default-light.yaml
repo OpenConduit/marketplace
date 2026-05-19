@@ -3,6 +3,7 @@ name: Default Light
 type: theme
 author: openconduit
 verified: true
+version: "1.0.0"
 description: Clean light theme for bright environments.
 content:
   colors:
