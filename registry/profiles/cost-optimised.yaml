@@ -1,0 +1,16 @@
+id: cost-optimised
+name: Cost Optimised
+type: routing-profile
+author: openconduit
+verified: true
+description: Routes simple tasks to fast/cheap models, reserves premium models for complex reasoning.
+content:
+  tiers:
+    fast: gpt-4o-mini
+    balanced: gpt-4o
+    powerful: claude-opus-4-5
+  taskOverrides:
+    code: balanced
+    research: powerful
+    summary: fast
+    chat: fast
