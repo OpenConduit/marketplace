@@ -3,13 +3,14 @@ name: Blue
 type: theme
 author: openconduit
 verified: true
-version: "1.0.0"
-description: Blue Theme
+version: "1.0.1"
+description: Dark blue theme with navy surfaces and steel-blue accents.
 content:
+  colorScheme: dark
   colors:
-    --color-primary:    "#1a6fa8"   # Vistra Blue lightened for UI contrast → buttons, focus rings, active states
-    --color-surface:    "#161B21"   # Rich Black → main panels, chat area
-    --color-background: "#0d1117"   # deeper than Rich Black → window bg
-    --color-muted:      "#1e2530"   # Rich Black lightened → cards, inputs
-    --color-border:     "#555559"   # Cool Gray → dividers
-    --color-text:       "#BFE7F7"   # Pale Cornflower → body text
+    --color-primary:    "#1a6fa8"   # steel blue → buttons, focus rings
+    --color-surface:    "#161B21"   # dark navy → main panels, chat area
+    --color-background: "#0d1117"   # deeper navy → window bg
+    --color-muted:      "#1e2530"   # slightly lighter navy → sidebar, cards
+    --color-border:     "#2d4a6a"   # muted blue-gray → dividers, hover
+    --color-text:       "#e2e8f0"   # near-white → body text

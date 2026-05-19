@@ -1,0 +1,16 @@
+id: light-green
+name: Light Green
+type: theme
+author: openconduit
+verified: true
+version: "1.0.0"
+description: Clean light theme with green accents.
+content:
+  colorScheme: light
+  colors:
+    --color-primary:    "#16a34a"   # green-600 → buttons, focus rings, active states
+    --color-background: "#f0fdf4"   # green-50  → window background
+    --color-surface:    "#ffffff"   # white     → main panels, chat area
+    --color-muted:      "#dcfce7"   # green-100 → sidebar, cards, inputs
+    --color-border:     "#bbf7d0"   # green-200 → dividers, hover states
+    --color-text:       "#1c1c1e"   # near-black → body text

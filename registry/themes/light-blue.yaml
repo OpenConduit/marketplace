@@ -1,0 +1,16 @@
+id: light-blue
+name: Light Blue
+type: theme
+author: openconduit
+verified: true
+version: "1.0.0"
+description: Clean light theme with blue accents.
+content:
+  colorScheme: light
+  colors:
+    --color-primary:    "#2563eb"   # blue-600 → buttons, focus rings, active states
+    --color-background: "#eff6ff"   # blue-50  → window background
+    --color-surface:    "#ffffff"   # white    → main panels, chat area
+    --color-muted:      "#dbeafe"   # blue-100 → sidebar, cards, inputs
+    --color-border:     "#bfdbfe"   # blue-200 → dividers, hover states
+    --color-text:       "#1c1c1e"   # near-black → body text

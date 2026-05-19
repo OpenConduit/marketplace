@@ -1,0 +1,16 @@
+id: light-red
+name: Light Red
+type: theme
+author: openconduit
+verified: true
+version: "1.0.0"
+description: Clean light theme with red accents.
+content:
+  colorScheme: light
+  colors:
+    --color-primary:    "#dc2626"   # red-600 → buttons, focus rings, active states
+    --color-background: "#fff1f2"   # red-50  → window background
+    --color-surface:    "#ffffff"   # white   → main panels, chat area
+    --color-muted:      "#fee2e2"   # red-100 → sidebar, cards, inputs
+    --color-border:     "#fecaca"   # red-200 → dividers, hover states
+    --color-text:       "#1c1c1e"   # near-black → body text
