@@ -7,7 +7,7 @@ version: "1.0.0"
 description: Blue Theme
 content:
   colors:
-    --color-primary:    "#003F6E"   # Vistra Blue → buttons, focus rings, active states
+    --color-primary:    "#1a6fa8"   # Vistra Blue lightened for UI contrast → buttons, focus rings, active states
     --color-surface:    "#161B21"   # Rich Black → main panels, chat area
     --color-background: "#0d1117"   # deeper than Rich Black → window bg
     --color-muted:      "#1e2530"   # Rich Black lightened → cards, inputs
