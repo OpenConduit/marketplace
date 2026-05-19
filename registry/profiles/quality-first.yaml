@@ -1,0 +1,12 @@
+id: quality-first
+name: Quality First
+type: routing-profile
+author: openconduit
+verified: true
+description: Always uses the most capable model available. Best output, higher cost.
+content:
+  tiers:
+    fast: claude-sonnet-4-5
+    balanced: claude-sonnet-4-5
+    powerful: claude-opus-4-5
+  taskOverrides: {}

@@ -1,0 +1,12 @@
+id: local-only
+name: Local Only
+type: routing-profile
+author: openconduit
+verified: true
+description: Routes everything to local models (LM Studio / Ollama). No data leaves your machine.
+content:
+  tiers:
+    fast: lmstudio-default
+    balanced: lmstudio-default
+    powerful: lmstudio-default
+  taskOverrides: {}

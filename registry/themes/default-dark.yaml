@@ -1,0 +1,14 @@
+id: default-dark
+name: Default Dark
+type: theme
+author: openconduit
+verified: true
+description: The default OpenConduit dark theme.
+content:
+  colors:
+    --color-primary: "#7c3aed"
+    --color-surface: "#1e1e2e"
+    --color-background: "#13131f"
+    --color-muted: "#2a2a3e"
+    --color-text: "#e2e8f0"
+    --color-border: "#2d2d45"

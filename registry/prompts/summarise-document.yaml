@@ -1,0 +1,27 @@
+id: summarise-document
+name: Summarise Document
+type: prompt-template
+author: openconduit
+verified: true
+description: Summarise a long document into key points.
+content:
+  template: |
+    Summarise the following document.
+
+    Output format: {{format}}
+    Audience: {{audience}}
+
+    ---
+    {{document}}
+  variables:
+    - name: format
+      label: Output Format
+      type: select
+      options: [bullet points, short paragraph, executive summary, TL;DR]
+    - name: audience
+      label: Audience
+      type: text
+      default: general
+    - name: document
+      label: Document
+      type: textarea

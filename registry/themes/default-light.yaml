@@ -1,0 +1,14 @@
+id: default-light
+name: Default Light
+type: theme
+author: openconduit
+verified: true
+description: Clean light theme for bright environments.
+content:
+  colors:
+    --color-primary: "#7c3aed"
+    --color-surface: "#ffffff"
+    --color-background: "#f5f5f7"
+    --color-muted: "#e5e5ea"
+    --color-text: "#1c1c1e"
+    --color-border: "#d1d1d6"

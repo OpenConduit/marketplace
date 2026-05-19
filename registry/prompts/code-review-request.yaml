@@ -1,0 +1,31 @@
+id: code-review-request
+name: Code Review Request
+type: prompt-template
+author: openconduit
+verified: true
+description: Request a focused code review with context.
+content:
+  template: |
+    Please review the following {{language}} code.
+
+    Context: {{context}}
+
+    Focus areas: {{focus}}
+
+    ```{{language}}
+    {{code}}
+    ```
+  variables:
+    - name: language
+      label: Language
+      type: text
+    - name: context
+      label: What does this code do?
+      type: textarea
+    - name: focus
+      label: Focus Areas
+      type: text
+      default: "correctness, security, readability"
+    - name: code
+      label: Code
+      type: textarea

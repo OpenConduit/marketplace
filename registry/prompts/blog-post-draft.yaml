@@ -1,0 +1,30 @@
+id: blog-post-draft
+name: Blog Post Draft
+type: prompt-template
+author: openconduit
+verified: true
+description: Draft a blog post from a topic and key points.
+content:
+  template: |
+    Write a blog post about {{topic}}.
+
+    Key points to cover:
+    {{key_points}}
+
+    Tone: {{tone}}.
+    Target length: {{word_count}} words.
+  variables:
+    - name: topic
+      label: Topic
+      type: text
+    - name: key_points
+      label: Key Points
+      type: textarea
+    - name: tone
+      label: Tone
+      type: select
+      options: [professional, casual, technical]
+    - name: word_count
+      label: Word Count
+      type: number
+      default: 800
