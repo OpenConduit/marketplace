@@ -39,11 +39,11 @@ jobs:
       - run: npm ci
 
       - name: Build
-        run: npm run build
+        run: npm run build1
 
       - name: Upload to R2
         run: |
-          for type in providers mcp personas prompts profiles themes; do
+          for type in providers mcp personas prompts profiles themes extensions ; do
             npx wrangler r2 object put openconduit-registry/v1/${type}/index.json \
               --file dist/v1/${type}/index.json \
               --content-type application/json \

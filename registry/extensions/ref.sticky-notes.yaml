@@ -1,0 +1,9 @@
+id: ref.sticky-notes
+name: Sticky Notes
+type: extension
+author: openconduit
+verified: true
+version: "1.0.0"
+description: A persistent sticky-note pad in the sidebar. Your note is auto-saved using extension settings so it survives restarts.
+content:
+  downloadUrl: "https://registry.openconduit.ai/v1/extensions/ref.sticky-notes/ref.sticky-notes-1.0.0.ocx"

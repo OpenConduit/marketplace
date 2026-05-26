@@ -7,7 +7,7 @@ import yaml from 'js-yaml';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
 
-const TYPES = ['providers', 'mcp', 'personas', 'prompts', 'profiles', 'themes'] as const;
+const TYPES = ['providers', 'mcp', 'personas', 'prompts', 'profiles', 'themes', 'extensions'] as const;
 
 let totalEntries = 0;
 

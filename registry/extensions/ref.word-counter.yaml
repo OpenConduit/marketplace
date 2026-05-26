@@ -1,0 +1,9 @@
+id: ref.word-counter
+name: Word Counter
+type: extension
+author: openconduit
+verified: true
+version: "1.0.0"
+description: Counts words, characters, messages and estimated tokens in the active conversation. Shown in a sidebar panel.
+content:
+  downloadUrl: "https://registry.openconduit.ai/v1/extensions/ref.word-counter/ref.word-counter-1.0.0.ocx"

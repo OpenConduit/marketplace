@@ -1,0 +1,9 @@
+id: ref.export-conversation
+name: Export Conversation
+type: extension
+author: openconduit
+verified: true
+version: "1.0.0"
+description: Export the active conversation to Markdown or plain text and copy it to the clipboard in one click.
+content:
+  downloadUrl: "https://registry.openconduit.ai/v1/extensions/ref.export-conversation/ref.export-conversation-1.0.0.ocx"
