@@ -14,6 +14,7 @@ const TYPE_MAP: Record<string, string> = {
   prompts: 'prompt-template',
   profiles: 'routing-profile',
   themes: 'theme',
+  extensions: 'extension',
 };
 
 const REQUIRED_FIELDS = ['id', 'name', 'type', 'author', 'version', 'description', 'content'] as const;
@@ -111,6 +112,25 @@ for (const [dir, expectedType] of Object.entries(TYPE_MAP)) {
       if (expectedType === 'prompt-template') {
         if (!content['template']) {
           fail(`${dir}/${file}`, `content.template is required`);
+        }
+      }
+
+      if (expectedType === 'extension') {
+        const downloadUrl = content['downloadUrl'] as string | undefined;
+        if (!downloadUrl) {
+          fail(`${dir}/${file}`, `content.downloadUrl is required`);
+        } else {
+          try {
+            const parsed = new URL(downloadUrl);
+            if (parsed.protocol !== 'https:') {
+              fail(`${dir}/${file}`, `content.downloadUrl must use https://`);
+            }
+            if (!downloadUrl.endsWith('.ocx')) {
+              fail(`${dir}/${file}`, `content.downloadUrl must end with .ocx`);
+            }
+          } catch {
+            fail(`${dir}/${file}`, `content.downloadUrl is not a valid URL: "${downloadUrl}"`);
+          }
         }
       }
     }

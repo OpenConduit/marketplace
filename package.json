@@ -6,11 +6,13 @@
   "type": "module",
   "scripts": {
     "build": "tsx scripts/build.ts",
-    "validate": "tsx scripts/validate.ts"
+    "validate": "tsx scripts/validate.ts",
+    "scan": "tsx scripts/scan-ocx.ts"
   },
   "devDependencies": {
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^20.0.0",
+    "fflate": "^0.8.3",
     "js-yaml": "^4.1.0",
     "tsx": "^4.0.0",
     "typescript": "^5.4.0",
