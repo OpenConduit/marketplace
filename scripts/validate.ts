@@ -20,6 +20,8 @@ const TYPE_MAP: Record<string, string> = {
 const REQUIRED_FIELDS = ['id', 'name', 'type', 'author', 'version', 'description', 'content'] as const;
 const SEMVER_RE = /^\d+\.\d+\.\d+$/;
 const KEBAB_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+// Extension IDs allow dot-namespacing: e.g. "acme.my-extension"
+const EXT_ID_RE = /^[a-z0-9]+(?:[.-][a-z0-9]+)*$/
 
 let errors = 0;
 
@@ -61,8 +63,9 @@ for (const [dir, expectedType] of Object.entries(TYPE_MAP)) {
 
     // id format
     const id = entry['id'] as string;
-    if (id && !KEBAB_RE.test(id)) {
-      fail(`${dir}/${file}`, `id must be kebab-case, got: "${id}"`);
+    const idRe = expectedType === 'extension' ? EXT_ID_RE : KEBAB_RE;
+    if (id && !idRe.test(id)) {
+      fail(`${dir}/${file}`, `id must be kebab-case (extensions may use dot namespacing), got: "${id}"`);
     }
 
     // id uniqueness within type
